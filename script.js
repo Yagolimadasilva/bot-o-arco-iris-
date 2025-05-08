@@ -32,6 +32,7 @@ function changeColor(event) {
         let currentIndex = parseInt(hexagon.dataset.colorIndex);
         let nextIndex = (currentIndex + 1) % colors.length;
 
-        hexagon 
+        hexagon.style.backgroundColor = colors[nextIndex];
+        hexagon.dataset.colorIndex = nextIndex;
     }
 }
